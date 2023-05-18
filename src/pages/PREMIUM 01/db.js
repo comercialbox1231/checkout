@@ -1,5 +1,5 @@
 export const FrameDefault = {
-  id: 738278,
+  id: 1,
   BannerSup: {
     descricaoPromocao: "PROMOÇÃO 50% OFF+FRETE GRÁTIS",
     desconto: "DESCONTO",

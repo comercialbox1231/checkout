@@ -35,10 +35,10 @@ function PayCreditCard() {
       hash: upsellHash,
       products: [
         {
-          sku: produtoUpsell[1].id,
-          name: produtoUpsell[1].nome,
+          sku: produtoUpsell[4].id,
+          name: "PREMIUM 04 UP",
           qty: 1,
-          price: produtoUpsell[1].preco,
+          price: produtoUpsell[4].preco,
         },
       ],
       overwrite_cart: false,
@@ -65,35 +65,27 @@ function PayCreditCard() {
     <Container>
       <GlobalStyle />
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <ImageLoja
-          style={{ marginBottom: "20px" }}
-          src="https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/eletronicos_caixa.png"
-          alt="Logomarca da loja"
-        />
-      </div>
-
       <Content>
         <Upsell>
           <Title>Adicione uma OFERTA ESPECIAL ao seu pedido</Title>
-          <div style={{ display: "flex", gap: "20px" }}>
+          <div style={{ display: "flex", flexDirection: 'column', alignItems: 'center', gap: "20px" }}>
             <img
-              src="https://cdn.shopify.com/s/files/1/0738/4249/1684/products/a_720x720_crop_center.jpg?v=1680015255"
+              src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRvE8pVudmW405Ze-gZf1pL7YUd51TkryBX7T_tT6YGBulyY12RsCn-i0nnTzLsHmj_KpUE6G3AfIzbMaO-kc56yepesE7cmalsNizVoypv"
               alt="Imagem do produto"
             />
-            <div>
-              <Text>{produtoUpsell[1].nome}</Text>
-              <Text style={{ fontWeight: "600" }}>
-                R$ {produtoUpsell[1].preco}
-              </Text>
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+              {/* <Text>{produtoUpsell[1].nome}</Text> */}
+              <span className="ofertaRelampago">PROMOÇÃO RELÂMPAGO - Apple AirPods Max</span>
+              <div className="ctnPrice">
+                <span className="priceCort">R$ 389,90</span>
+                <Text style={{ fontWeight: "600", fontSize: '17px', color: "rgb(201, 32, 20)", textDecorationLine: 'underline' }}>
+                  R$ {produtoUpsell[3].preco}
+                </Text>
+              </div>
               <ButtonAdicionar type="button" onClick={handleSubmitUpsell}>
-                Adicionar ao pedido
+                COMPRAR AGORA
               </ButtonAdicionar>
+              <span style={{ fontSize: '12px', textAlign: 'center', margin: '10px'}}>Obs: A partir do momento que você clicar no botão a sua compra será processada. <strong>Aproveite a oferta</strong></span>
             </div>
           </div>
         </Upsell>
@@ -138,6 +130,20 @@ function PayCreditCard() {
           </DivQrcode>
         </WrapperInformations>
       </Content>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <ImageLoja
+          style={{ marginBottom: "20px" }}
+          src="https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/eletronicos_caixa.png"
+          alt="Logomarca da loja"
+        />
+      </div>
+
     </Container>
   )
 }

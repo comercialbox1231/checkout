@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.div`
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0 20px;
 
   h3 {
     font-size: 1.25rem;
@@ -29,6 +29,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
 `
 
 export const WrapperInformations = styled.div`
@@ -51,6 +52,31 @@ export const Upsell = styled.div`
   img {
     width: 200px;
     height: 200px;
+    border: 1px dashed #000;
+  }
+
+  .ctnPrice {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .ofertaRelampago {
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .priceCort {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: line-through;
   }
 `
 
@@ -137,14 +163,15 @@ export const DivCopy = styled.div`
 `
 
 export const Title = styled.h4`
-  font-size: 1rem;
+  text-align: center;
+  width: 70%;
+  font-size: 20px;
   font-weight: 600;
-  text-align: left;
   color: #202223;
   margin: 15px 5px;
 
   @media screen and (max-width: 490px) {
-    font-size: 0.875rem;
+    
   }
 `
 
@@ -173,7 +200,7 @@ export const ButtonAdicionar = styled.button`
   width: 100%;
   max-width: 250px;
   padding: 12px 10px;
-  margin-top: 30px;
+  margin-top: 10px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
