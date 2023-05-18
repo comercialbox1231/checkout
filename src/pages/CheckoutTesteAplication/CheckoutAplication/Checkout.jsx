@@ -448,6 +448,8 @@ function Checkout() {
                 .then((response) => {
                   console.log(response.data, "DEU CERTO O PAGAMENTO ✅")
 
+                  fbq('track', 'Purchase');
+
                   setDataFromApi(response.data)
 
                   navigate("/payment-credit-card", {
@@ -574,7 +576,11 @@ function Checkout() {
                 )
                 .then((response) => {
                   console.log(response.data, "DEU CERTO O PAGAMENTO ✅")
+                  
+                  fbq('track', 'Purchase');
+
                   setDataFromApi(response.data)
+                  
                   navigate("/payment-pix", {
                     state: {
                       dataFromApi: response.data,
