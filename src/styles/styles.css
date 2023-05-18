@@ -1,0 +1,29 @@
+/* estilização do swiper */
+div.swiper-button-prev,
+div.swiper-button-prev:after,
+div.swiper-button-next,
+div.swiper-button-next:after {
+  color: #808080;
+  font-size: 30px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 490px) {
+  div.swiper-button-prev,
+  div.swiper-button-prev:after,
+  div.swiper-button-next,
+  div.swiper-button-next:after {
+    font-size: 22px;
+  }
+}
+
+/* estilização do modal - tabela de preço */
+.react-responsive-modal-container .react-responsive-modal-modal {
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 479px) {
+  .react-responsive-modal-container .react-responsive-modal-modal {
+    display: block;
+  }
+}
