@@ -59,12 +59,12 @@ export const TextPedido = styled.p`
 `
 
 export const ImageLoja = styled.img`
-  width: 213px;
-  height: 71px;
+  max-width: 250px;
+  height: auto;
 
   @media screen and (max-width: 490px) {
-    width: 185px;
-    height: 61.663px;
+    width: auto;
+    height: auto;
   }
 `
 

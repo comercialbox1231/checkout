@@ -536,7 +536,7 @@ function Checkout() {
             products: [
               {
                 sku: produto.id,
-                name: produto.nome,
+                name: produto.nomeapi ,
                 qty: itemCount,
               },
             ],
@@ -851,7 +851,7 @@ function Checkout() {
                       R${" "}
                       {(itemCount * produto.preco).toString().replace(".", ",")}
                     </p>
-                    <p>---</p>
+                    <p>Frete Grátis</p>
                     {selectedPix && (
                       <p>
                         - R${" "}
@@ -1565,15 +1565,15 @@ function Checkout() {
 
            {tipoShop === 'ofbx' ? <ImageLoja>
           <img
-            src="https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/logo_oficialbox_branca_4.png"
-            alt="BOTAR IMAGEM DA CAIXA DA OFICIAL BOX"
+            src="https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/eletronicos_caixa.png"
+            alt="Oficial Box"
           />
           </ImageLoja>
           :
           <ImageLoja>
             <img
-              src="https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/eletronicos_caixa.png"
-              alt="BOTAR IMAGEM DA CAIXA DA MEGA CAIXAS"
+              src="https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/logo_oficialbox_branca_4.png"
+              alt="BOTAR IMAGEM DA MEGA CAIXA"
             />
           </ImageLoja>
           }

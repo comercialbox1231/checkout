@@ -333,8 +333,8 @@ export const SectionMobile = styled.div`
   }
 
   img {
-    width: 52px;
-    height: 52px;
+    width: 70px;
+    height: 70px;
     border: 1px solid #c9c9c9;
     border-radius: 3px;
     padding: 3px;

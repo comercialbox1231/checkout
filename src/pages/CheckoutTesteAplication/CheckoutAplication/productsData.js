@@ -7,7 +7,7 @@ export const productsData = [
     nome: "Caixa Surpresa - Oficial Box 1 Unidade",
     nomeapi: "PREMIUM 01",
     imagem:
-      "https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/caixa_oficialbox_2.png",
+      "https://caixasmisteriosas.com/wp-content/uploads/2022/04/CAIXA-MISTERIOSA-tiny.png",
     preco: 89.90,
     descontoPix: function () {
       return (this.preco * 0.02).toFixed(2)
@@ -57,7 +57,7 @@ export const productsData = [
     nome: "Caixa Surpresa - Oficial Box 2 Unidades.",
     nomeapi: "PREMIUM 02",
     imagem:
-      "https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/caixa_oficialbox_2.png",
+      "https://caixasmisteriosas.com/wp-content/uploads/2022/04/PRODUTO-2-unidades.png",
     preco: 149.80,
     descontoPix: function () {
       return (this.preco * 0.02).toFixed(2)
@@ -107,7 +107,7 @@ export const productsData = [
     nome: "Caixa Surpresa - Oficial Box 3 Unidades.",
     nomeapi: "PREMIUM 03",
     imagem:
-      "https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/caixa_oficialbox_2.png",
+      "https://caixasmisteriosas.com/wp-content/uploads/2022/04/PRODUTO-3-unidades.png",
     preco: 199.90,
     descontoPix: function () {
       return (this.preco * 0.02).toFixed(2)
