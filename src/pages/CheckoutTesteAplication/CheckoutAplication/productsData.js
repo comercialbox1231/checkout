@@ -503,5 +503,207 @@ export const productsData = [
       return (this.preco * 0.1004).toFixed(2)
     },
   },
+  
+  // HIPERSENSE =>
+  // HIPERSENSE 01 UNIDADES 24
+  { 
+    id: 24,
+    tipo: "fisico",
+    tipoShop: "hipersense",
+    nome: "1 Frasco - Hipersense",
+    nomeapi: "1 Frasco - Hipersense",
+    imagem:
+      "https://images.yampi.me/assets/stores/digital-products4/uploads/images/1-frasco-hipersense-64625ffc2bed4-thumb.png",
+    preco: 197.00,
+    descontoPix: function () {
+      return (this.preco * 0.02).toFixed(2)
+    },
+    precoPix: function () {
+      return (this.preco - this.preco * 0.02).toFixed(2)
+    },
+    preco2x: function () {
+      return (this.preco * 0.5225).toFixed(2)
+    },
+    preco3x: function () {
+      return (this.preco * 0.3535).toFixed(2)
+    },
+    preco4x: function () {
+      return (this.preco * 0.269).toFixed(2)
+    },
+    preco5x: function () {
+      return (this.preco * 0.21832).toFixed(2)
+    },
+    preco6x: function () {
+      return (this.preco * 0.1845).toFixed(2)
+    },
+    preco7x: function () {
+      return (this.preco * 0.16045).toFixed(2)
+    },
+    preco8x: function () {
+      return (this.preco * 0.1424).toFixed(2)
+    },
+    preco9x: function () {
+      return (this.preco * 0.12837).toFixed(2)
+    },
+    preco10x: function () {
+      return (this.preco * 0.1172).toFixed(2)
+    },
+    preco11x: function () {
+      return (this.preco * 0.10798).toFixed(2)
+    },
+    preco12x: function () {
+      return (this.preco * 0.1004).toFixed(2)
+    },
+  },
+  // HIPERSENSE 02 + 01 UNIDADES 25 
+  { 
+    id: 25,
+    tipo: "fisico",
+    tipoShop: "hipersense",
+    nome: "3 Frascos - Hipersense",
+    nomeapi: "3 Frascos - Hipersense",
+    imagem:
+      "https://images.yampi.me/assets/stores/digital-products4/uploads/images/3-frascos-hipersense-6462600c9bb33-thumb.png",
+    preco: 297.00,
+    descontoPix: function () {
+      return (this.preco * 0.02).toFixed(2)
+    },
+    precoPix: function () {
+      return (this.preco - this.preco * 0.02).toFixed(2)
+    },
+    preco2x: function () {
+      return (this.preco * 0.5225).toFixed(2)
+    },
+    preco3x: function () {
+      return (this.preco * 0.3535).toFixed(2)
+    },
+    preco4x: function () {
+      return (this.preco * 0.269).toFixed(2)
+    },
+    preco5x: function () {
+      return (this.preco * 0.21832).toFixed(2)
+    },
+    preco6x: function () {
+      return (this.preco * 0.1845).toFixed(2)
+    },
+    preco7x: function () {
+      return (this.preco * 0.16045).toFixed(2)
+    },
+    preco8x: function () {
+      return (this.preco * 0.1424).toFixed(2)
+    },
+    preco9x: function () {
+      return (this.preco * 0.12837).toFixed(2)
+    },
+    preco10x: function () {
+      return (this.preco * 0.1172).toFixed(2)
+    },
+    preco11x: function () {
+      return (this.preco * 0.10798).toFixed(2)
+    },
+    preco12x: function () {
+      return (this.preco * 0.1004).toFixed(2)
+    },
+  },
+  // HIPERSENSE 03 + 02 UNIDADES 26 
+  { 
+    id: 26,
+    tipo: "fisico",
+    tipoShop: "hipersense",
+    nome: "5 Frascos - Hipersense",
+    nomeapi: "5 Frascos - Hipersense",
+    imagem:
+      "https://images.yampi.me/assets/stores/digital-products4/uploads/images/5-frascos-hipersense-6462601a3cd06-thumb.png",
+    preco: 397.00,
+    descontoPix: function () {
+      return (this.preco * 0.02).toFixed(2)
+    },
+    precoPix: function () {
+      return (this.preco - this.preco * 0.02).toFixed(2)
+    },
+    preco2x: function () {
+      return (this.preco * 0.5225).toFixed(2)
+    },
+    preco3x: function () {
+      return (this.preco * 0.3535).toFixed(2)
+    },
+    preco4x: function () {
+      return (this.preco * 0.269).toFixed(2)
+    },
+    preco5x: function () {
+      return (this.preco * 0.21832).toFixed(2)
+    },
+    preco6x: function () {
+      return (this.preco * 0.1845).toFixed(2)
+    },
+    preco7x: function () {
+      return (this.preco * 0.16045).toFixed(2)
+    },
+    preco8x: function () {
+      return (this.preco * 0.1424).toFixed(2)
+    },
+    preco9x: function () {
+      return (this.preco * 0.12837).toFixed(2)
+    },
+    preco10x: function () {
+      return (this.preco * 0.1172).toFixed(2)
+    },
+    preco11x: function () {
+      return (this.preco * 0.10798).toFixed(2)
+    },
+    preco12x: function () {
+      return (this.preco * 0.1004).toFixed(2)
+    },
+  },
+  // HIPERSENSE 03 + 02 UNIDADES 26 
+  { 
+    id: 26,
+    tipo: "fisico",
+    tipoShop: "hipersense",
+    nome: "12 Frascos - Hipersense",
+    nomeapi: "12 Frascos - Hipersense",
+    imagem:
+      "https://images.yampi.me/assets/stores/digital-products4/uploads/images/12-frascos-hipersense-6462602800302-thumb.png",
+    preco: 697.00,
+    descontoPix: function () {
+      return (this.preco * 0.02).toFixed(2)
+    },
+    precoPix: function () {
+      return (this.preco - this.preco * 0.02).toFixed(2)
+    },
+    preco2x: function () {
+      return (this.preco * 0.5225).toFixed(2)
+    },
+    preco3x: function () {
+      return (this.preco * 0.3535).toFixed(2)
+    },
+    preco4x: function () {
+      return (this.preco * 0.269).toFixed(2)
+    },
+    preco5x: function () {
+      return (this.preco * 0.21832).toFixed(2)
+    },
+    preco6x: function () {
+      return (this.preco * 0.1845).toFixed(2)
+    },
+    preco7x: function () {
+      return (this.preco * 0.16045).toFixed(2)
+    },
+    preco8x: function () {
+      return (this.preco * 0.1424).toFixed(2)
+    },
+    preco9x: function () {
+      return (this.preco * 0.12837).toFixed(2)
+    },
+    preco10x: function () {
+      return (this.preco * 0.1172).toFixed(2)
+    },
+    preco11x: function () {
+      return (this.preco * 0.10798).toFixed(2)
+    },
+    preco12x: function () {
+      return (this.preco * 0.1004).toFixed(2)
+    },
+  },
 ]
 

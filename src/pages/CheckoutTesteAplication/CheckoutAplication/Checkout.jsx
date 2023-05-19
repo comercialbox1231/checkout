@@ -737,7 +737,13 @@ function Checkout() {
     : tipoShop === 'encnen' ?
       <CtnBannerSup className="banner_security">
         <img src="https://s3.sa-east-1.amazonaws.com/king-assets.yampi.me/dooki/6406c395113b6/6406c395113bd.png" alt="" />          
-      </CtnBannerSup> : tipoShop === 'sulinex' ? <><span style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '10px', fontSize: '16px', fontWeight: '600'}}>SULINEX</span></> : <span>ALGO DE ERRADO ADD TIPO</span>
+      </CtnBannerSup> : tipoShop === 'sulinex' ? <><span style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '10px', fontSize: '16px', fontWeight: '600'}}>SULINEX</span></> 
+      : tipoShop === 'hipersense' ? <>
+        <CtnBannerSup style={{backgroundColor: '#FFF', minHeight: 'auto', padding: '15px 0'}} className="banner_security">
+          <img style={{width: '180px'}} src="https://s3.sa-east-1.amazonaws.com/king-assets.yampi.me/dooki/646260795834f/6462607958355.png" alt="" />          
+        </CtnBannerSup>
+      </>
+      : <span>ALGO DE ERRADO ADD TIPO</span>
     }
 
     <Container>
@@ -1676,7 +1682,41 @@ function Checkout() {
                           te = window.location.href + "/termos";
                           document.getElementById("p").setAttribute("href", pr), document.getElementById("t").setAttribute("href", te);
               </script> */}
-              </FooterCheckout>
+            </FooterCheckout>
+            </> : tipoShop === 'hipersense' ? <>
+            <ImageLoja>
+              <img
+              style={{width: '80%', padding: '25px'}}
+                src="https://s3.sa-east-1.amazonaws.com/king-assets.yampi.me/dooki/646260795834f/6462607958355.png"
+                alt="Logo Sulinex"
+                />
+            </ImageLoja>
+            <FooterCheckout>
+              <p style={{fontSize: '15px', marginBottom: '7px'}}>
+                Copyright 2023 – SULINEX - 50.226.126/0001-57 ®
+              </p>
+              
+              <p style={{marginRight: "4px", fontSize: '12px', fontWeight: '500', textAlign: "center"}}>Todos os Direitos Reservados</p>
+              
+              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '14px 0'}}>
+                <a id="t" style={{color: '#000' }} href="https://sulinex.com.br/termos-e-condicoes//" target="_blank">
+                  Termos de Uso
+                </a> 
+                <span style={{margin: "0 10px"}}>·</span>
+                <a id="p" style={{color: '#000' }} href="https://sulinex.com.br/politica-de-privacidade/" target="_blank">
+                  Privacidade
+                </a>
+              </div>
+              
+              <p style={{fontSize: "12px"}}>
+                Este site não tem afiliação a qualquer plataforma de anúncios. Todos os conteúdos são de nossa inteira responsabilidade.
+              </p>
+              {/* <script>
+                        const pr = window.location.href + "/privacidade",
+                          te = window.location.href + "/termos";
+                          document.getElementById("p").setAttribute("href", pr), document.getElementById("t").setAttribute("href", te);
+              </script> */}
+            </FooterCheckout>
             </> : <><span>ADICIONAR UM TIPO PARA SEU CHECKOUT</span></>
           }
 
