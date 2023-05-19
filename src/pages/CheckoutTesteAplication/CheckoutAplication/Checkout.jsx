@@ -1693,7 +1693,7 @@ function Checkout() {
             </ImageLoja>
             <FooterCheckout>
               <p style={{fontSize: '15px', marginBottom: '7px'}}>
-                Copyright 2023 – SULINEX - 50.226.126/0001-57 ®
+                Copyright 2023 – HIPERSENSE - 50.226.126/0001-57 ®
               </p>
               
               <p style={{marginRight: "4px", fontSize: '12px', fontWeight: '500', textAlign: "center"}}>Todos os Direitos Reservados</p>
