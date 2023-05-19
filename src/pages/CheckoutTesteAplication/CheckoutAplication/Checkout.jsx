@@ -448,7 +448,10 @@ function Checkout() {
                 .then((response) => {
                   console.log(response.data, "DEU CERTO O PAGAMENTO ✅")
 
-                  fbq('track', 'Purchase');
+                  fbq('track', 'Purchase', {
+                    value: produto.preco,
+                    currency: 'BRL' 
+                  });
 
                   setDataFromApi(response.data)
 
@@ -577,7 +580,10 @@ function Checkout() {
                 .then((response) => {
                   console.log(response.data, "DEU CERTO O PAGAMENTO ✅")
                   
-                  fbq('track', 'Purchase');
+                  fbq('track', 'Purchase', {
+                    value: produto.preco,
+                    currency: 'BRL' 
+                  });
 
                   setDataFromApi(response.data)
                   
@@ -747,10 +753,10 @@ function Checkout() {
         </DivFlexHeader>
         <DivFlexHeader>
           <HeaderText style={{ marginRight: "5px" }}>
-            Promoção especial encerra em:
+            Promoção se encerra em:
           </HeaderText>
           <CronometroStyle>
-            <Cronometro minutos="10" segundos="8" />
+            <Cronometro minutos="13" segundos="8" />
           </CronometroStyle>
         </DivFlexHeader>
       </HeaderPromotion>
@@ -1569,47 +1575,76 @@ function Checkout() {
           </Beneficios>
              
 
-           {tipoShop === 'ofbx' ? <ImageLoja>
-          <img
-            src="https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/eletronicos_caixa.png"
-            alt="Oficial Box"
-          />
-          </ImageLoja>
-          :
-          <ImageLoja>
+           {tipoShop === 'ofbx' ? <>
+           <ImageLoja>
             <img
-              src="https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/logo_oficialbox_branca_4.png"
-              alt="BOTAR IMAGEM DA MEGA CAIXA"
-            />
-          </ImageLoja>
+              src="https://megacaixas.shop/suacaixa/wp-content/uploads/2022/08/eletronicos_caixa.png"
+              alt="Oficial Box"
+              />
+            </ImageLoja>
+            <FooterCheckout>
+            <p style={{fontSize: '15px', marginBottom: '7px'}}>
+              Copyright 2023 – Encomendas OFICIAL - 37.063.695/0001-60 ®
+            </p>
+            
+            <p style={{marginRight: "4px", fontSize: '12px', fontWeight: '500', textAlign: "center"}}>Todos os Direitos Reservados</p>
+            
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '14px 0'}}>
+              <a id="t" style={{color: '#000' }} href="https://encomendasnaoentregues.site/?fbclid=PAAaaUQ_DrJ3WkRmalQGiaJR-SHyOt-IjgkpRlLZ0skH_AUp63svzyGimn-c0_aem_th_ARcOr_QZ8wcEI1ttfFZI1uvTpC4tJlr8LFSm7-tMUzZUfnSIV_IFFf_bHgzttFrN8tj57aWWJQb8MiHvazKSOSOq/termos" target="_blank">
+                Termos de Uso
+              </a> 
+              <span style={{margin: "0 10px"}}>·</span>
+              <a id="p" style={{color: '#000' }} href="https://encomendasnaoentregues.site/?fbclid=PAAaaUQ_DrJ3WkRmalQGiaJR-SHyOt-IjgkpRlLZ0skH_AUp63svzyGimn-c0_aem_th_ARcOr_QZ8wcEI1ttfFZI1uvTpC4tJlr8LFSm7-tMUzZUfnSIV_IFFf_bHgzttFrN8tj57aWWJQb8MiHvazKSOSOq/privacidade" target="_blank">
+                Privacidade
+              </a>
+            </div>
+            
+            <p style={{fontSize: "12px"}}>
+              Este site não tem afiliação a qualquer plataforma de anúncios. Todos os conteúdos são de nossa inteira responsabilidade.
+            </p>
+            {/* <script>
+                      const pr = window.location.href + "/privacidade",
+                        te = window.location.href + "/termos";
+                        document.getElementById("p").setAttribute("href", pr), document.getElementById("t").setAttribute("href", te);
+            </script> */}
+            </FooterCheckout>
+          </>
+          : <>
+            <ImageLoja>
+              <img
+              style={{width: '80%', padding: '25px'}}
+                src="https://s3.sa-east-1.amazonaws.com/king-assets.yampi.me/dooki/6406c395113b6/6406c395113bd.png"
+                alt="Logo Tipo Encomenda"
+                />
+            </ImageLoja>
+            <FooterCheckout>
+              <p style={{fontSize: '15px', marginBottom: '7px'}}>
+                Copyright 2023 – Encomendas OFICIAL - 47.597.110/0001-16 ®
+              </p>
+              
+              <p style={{marginRight: "4px", fontSize: '12px', fontWeight: '500', textAlign: "center"}}>Todos os Direitos Reservados</p>
+              
+              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '14px 0'}}>
+                <a id="t" style={{color: '#000' }} href="https://encomendasnaoentregues.site/?fbclid=PAAaaUQ_DrJ3WkRmalQGiaJR-SHyOt-IjgkpRlLZ0skH_AUp63svzyGimn-c0_aem_th_ARcOr_QZ8wcEI1ttfFZI1uvTpC4tJlr8LFSm7-tMUzZUfnSIV_IFFf_bHgzttFrN8tj57aWWJQb8MiHvazKSOSOq/termos" target="_blank">
+                  Termos de Uso
+                </a> 
+                <span style={{margin: "0 10px"}}>·</span>
+                <a id="p" style={{color: '#000' }} href="https://encomendasnaoentregues.site/?fbclid=PAAaaUQ_DrJ3WkRmalQGiaJR-SHyOt-IjgkpRlLZ0skH_AUp63svzyGimn-c0_aem_th_ARcOr_QZ8wcEI1ttfFZI1uvTpC4tJlr8LFSm7-tMUzZUfnSIV_IFFf_bHgzttFrN8tj57aWWJQb8MiHvazKSOSOq/privacidade" target="_blank">
+                  Privacidade
+                </a>
+              </div>
+              
+              <p style={{fontSize: "12px"}}>
+                Este site não tem afiliação a qualquer plataforma de anúncios. Todos os conteúdos são de nossa inteira responsabilidade.
+              </p>
+              {/* <script>
+                        const pr = window.location.href + "/privacidade",
+                          te = window.location.href + "/termos";
+                          document.getElementById("p").setAttribute("href", pr), document.getElementById("t").setAttribute("href", te);
+              </script> */}
+              </FooterCheckout>
+            </>
           }
-
-          <FooterCheckout>
-          <p style={{fontSize: '15px', marginBottom: '7px'}}>
-            Copyright 2023 – Encomendas OFICIAL - 47.597.110/0001-16 ®
-          </p>
-          
-          <p style={{marginRight: "4px", fontSize: '12px', fontWeight: '500', textAlign: "center"}}>Todos os Direitos Reservados</p>
-          
-          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '14px 0'}}>
-            <a id="t" style={{color: '#000' }} href="https://encomendasnaoentregues.site/?fbclid=PAAaaUQ_DrJ3WkRmalQGiaJR-SHyOt-IjgkpRlLZ0skH_AUp63svzyGimn-c0_aem_th_ARcOr_QZ8wcEI1ttfFZI1uvTpC4tJlr8LFSm7-tMUzZUfnSIV_IFFf_bHgzttFrN8tj57aWWJQb8MiHvazKSOSOq/termos" target="_blank">
-              Termos de Uso
-            </a> 
-            <span style={{margin: "0 10px"}}>·</span>
-            <a id="p" style={{color: '#000' }} href="https://encomendasnaoentregues.site/?fbclid=PAAaaUQ_DrJ3WkRmalQGiaJR-SHyOt-IjgkpRlLZ0skH_AUp63svzyGimn-c0_aem_th_ARcOr_QZ8wcEI1ttfFZI1uvTpC4tJlr8LFSm7-tMUzZUfnSIV_IFFf_bHgzttFrN8tj57aWWJQb8MiHvazKSOSOq/privacidade" target="_blank">
-              Privacidade
-            </a>
-          </div>
-          
-          <p style={{fontSize: "12px"}}>
-            Este site não tem afiliação a qualquer plataforma de anúncios. Todos os conteúdos são de nossa inteira responsabilidade.
-          </p>
-          {/* <script>
-                    const pr = window.location.href + "/privacidade",
-                      te = window.location.href + "/termos";
-                      document.getElementById("p").setAttribute("href", pr), document.getElementById("t").setAttribute("href", te);
-          </script> */}
-          </FooterCheckout>
 
         </FormWrapper>
 
