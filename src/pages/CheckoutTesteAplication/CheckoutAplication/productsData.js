@@ -153,6 +153,7 @@ export const productsData = [
   { 
     id: 44,
     tipo: "fisico",
+    tipoShop: 'ofbx',
     nome: "PROMOÇÃO RELÂMPAGO - Apple AirPods Max",
     nomeapi: "PREMIUM 04",
     imagem:
@@ -204,6 +205,7 @@ export const productsData = [
   { 
     id: 4,
     tipo: "fisico",
+    tipoShop: 'encnen',
     nome: "Encomendas Secretas - Prata",
     nomeapi: "PREMIUM 04",
     imagem:
@@ -253,6 +255,7 @@ export const productsData = [
   { 
     id: 5,
     tipo: "fisico",
+    tipoShop: 'encnen',
     nome: "Encomendas Secretas - Diamante",
     nomeapi: "PREMIUM 05",
     imagem:
@@ -302,6 +305,7 @@ export const productsData = [
   { 
     id: 6,
     tipo: "fisico",
+    tipoShop: 'encnen',
     nome: "Encomendas Secretas - Ouro",
     nomeapi: "PREMIUM 06",
     imagem:
@@ -347,4 +351,157 @@ export const productsData = [
       return (this.preco * 0.1004).toFixed(2)
     },
   },
+
+  // Sulinex =>
+  // PREMIUM 14 PRATA
+  { 
+    id: 14,
+    tipo: "fisico",
+    tipoShop: "sulinex",
+    nome: "Sulinex 01 Unidade",
+    nomeapi: "Sulinex 01 Unidade",
+    imagem:
+      "https://sulinex.hellolife.com.br/wp-content/uploads/2023/05/1-frasco-embalagem-2.webp",
+    preco: 167.00,
+    descontoPix: function () {
+      return (this.preco * 0.02).toFixed(2)
+    },
+    precoPix: function () {
+      return (this.preco - this.preco * 0.02).toFixed(2)
+    },
+    preco2x: function () {
+      return (this.preco * 0.5225).toFixed(2)
+    },
+    preco3x: function () {
+      return (this.preco * 0.3535).toFixed(2)
+    },
+    preco4x: function () {
+      return (this.preco * 0.269).toFixed(2)
+    },
+    preco5x: function () {
+      return (this.preco * 0.21832).toFixed(2)
+    },
+    preco6x: function () {
+      return (this.preco * 0.1845).toFixed(2)
+    },
+    preco7x: function () {
+      return (this.preco * 0.16045).toFixed(2)
+    },
+    preco8x: function () {
+      return (this.preco * 0.1424).toFixed(2)
+    },
+    preco9x: function () {
+      return (this.preco * 0.12837).toFixed(2)
+    },
+    preco10x: function () {
+      return (this.preco * 0.1172).toFixed(2)
+    },
+    preco11x: function () {
+      return (this.preco * 0.10798).toFixed(2)
+    },
+    preco12x: function () {
+      return (this.preco * 0.1004).toFixed(2)
+    },
+  },
+  // PREMIUM 15 COMBO DIAMANTE
+  { 
+    id: 15,
+    tipo: "fisico",
+    tipoShop: "sulinex",
+    nome: "Sulinex 05 Unidades",
+    nomeapi: "Sulinex 05 Unidades",
+    imagem:
+      "https://sulinex.hellolife.com.br/wp-content/uploads/2023/05/1-frasco-embalagem-2.webp",
+    preco: 307.00,
+    descontoPix: function () {
+      return (this.preco * 0.02).toFixed(2)
+    },
+    precoPix: function () {
+      return (this.preco - this.preco * 0.02).toFixed(2)
+    },
+    preco2x: function () {
+      return (this.preco * 0.5225).toFixed(2)
+    },
+    preco3x: function () {
+      return (this.preco * 0.3535).toFixed(2)
+    },
+    preco4x: function () {
+      return (this.preco * 0.269).toFixed(2)
+    },
+    preco5x: function () {
+      return (this.preco * 0.21832).toFixed(2)
+    },
+    preco6x: function () {
+      return (this.preco * 0.1845).toFixed(2)
+    },
+    preco7x: function () {
+      return (this.preco * 0.16045).toFixed(2)
+    },
+    preco8x: function () {
+      return (this.preco * 0.1424).toFixed(2)
+    },
+    preco9x: function () {
+      return (this.preco * 0.12837).toFixed(2)
+    },
+    preco10x: function () {
+      return (this.preco * 0.1172).toFixed(2)
+    },
+    preco11x: function () {
+      return (this.preco * 0.10798).toFixed(2)
+    },
+    preco12x: function () {
+      return (this.preco * 0.1004).toFixed(2)
+    },
+  },
+  // PREMIUM 16 COMBO OURO
+  { 
+    id: 16,
+    tipo: "fisico",
+    tipoShop: "sulinex",
+    nome: "Sulinex 03 Unidade",
+    nomeapi: "Sulinex 03 Unidade",
+    imagem:
+      "https://sulinex.hellolife.com.br/wp-content/uploads/2023/05/1-frasco-embalagem-2.webp",
+    preco: 237.00,
+    descontoPix: function () {
+      return (this.preco * 0.02).toFixed(2)
+    },
+    precoPix: function () {
+      return (this.preco - this.preco * 0.02).toFixed(2)
+    },
+    preco2x: function () {
+      return (this.preco * 0.5225).toFixed(2)
+    },
+    preco3x: function () {
+      return (this.preco * 0.3535).toFixed(2)
+    },
+    preco4x: function () {
+      return (this.preco * 0.269).toFixed(2)
+    },
+    preco5x: function () {
+      return (this.preco * 0.21832).toFixed(2)
+    },
+    preco6x: function () {
+      return (this.preco * 0.1845).toFixed(2)
+    },
+    preco7x: function () {
+      return (this.preco * 0.16045).toFixed(2)
+    },
+    preco8x: function () {
+      return (this.preco * 0.1424).toFixed(2)
+    },
+    preco9x: function () {
+      return (this.preco * 0.12837).toFixed(2)
+    },
+    preco10x: function () {
+      return (this.preco * 0.1172).toFixed(2)
+    },
+    preco11x: function () {
+      return (this.preco * 0.10798).toFixed(2)
+    },
+    preco12x: function () {
+      return (this.preco * 0.1004).toFixed(2)
+    },
+  },
 ]
+
