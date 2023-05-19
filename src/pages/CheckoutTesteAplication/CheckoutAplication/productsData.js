@@ -655,9 +655,9 @@ export const productsData = [
       return (this.preco * 0.1004).toFixed(2)
     },
   },
-  // HIPERSENSE 03 + 02 UNIDADES 26 
+  // HIPERSENSE 12 UNIDADES 27 
   { 
-    id: 26,
+    id: 27,
     tipo: "fisico",
     tipoShop: "hipersense",
     nome: "12 Frascos - Hipersense",
