@@ -119,6 +119,12 @@ function Checkout() {
 
   // Capturar IP Cliente
   useEffect(() => {
+    fbq('track', 'InitiateCheckout');
+    console.log("deu certo")
+  }, [])
+
+  // Capturar IP Cliente
+  useEffect(() => {
     async function fetchIpAddress() {
       const response = await axios.get("https://api.ipify.org?format=json")
 
@@ -136,7 +142,7 @@ function Checkout() {
       axios
         .get(`https://viacep.com.br/ws/${value.replace("-", "")}/json/`)
         .then((response) => {
-          // console.log(response)
+        
           const { logradouro, bairro, localidade, uf } = response.data
           if (response.data.erro) {
             setErrorCEP("CEP não encontrado")
@@ -331,8 +337,6 @@ function Checkout() {
     setSelectedOption(optionValue)
     setSelectedKey(optionKey)
     toggle("item-4")
-    console.log(optionValue)
-    console.log(optionKey)
   }
 
   const navigate = useNavigate()
@@ -395,7 +399,6 @@ function Checkout() {
           headers,
         })
         .then((response) => {
-          console.log(response.data, "CLIENTE ✅")
           setShowLoading(true)
 
           const postOrder = {
@@ -415,7 +418,6 @@ function Checkout() {
               headers,
             })
             .then((response) => {
-              console.log(response.data, "ORDEM ✅")
 
               const orderId = response.data.data.id
 
@@ -446,7 +448,6 @@ function Checkout() {
                   { headers }
                 )
                 .then((response) => {
-                  console.log(response.data, "DEU CERTO O PAGAMENTO ✅")
 
                   fbq('track', 'Purchase', {
                     value: produto.preco,
@@ -532,7 +533,6 @@ function Checkout() {
           headers,
         })
         .then((response) => {
-          console.log(response.data, "CLIENTE ✅")
           setShowLoading(true)
 
           const postOrder = {
@@ -552,7 +552,6 @@ function Checkout() {
               headers,
             })
             .then((response) => {
-              console.log(response.data, "ORDEM ✅")
 
               const orderId = response.data.data.id
 
@@ -578,7 +577,6 @@ function Checkout() {
                   { headers }
                 )
                 .then((response) => {
-                  console.log(response.data, "DEU CERTO O PAGAMENTO ✅")
                   
                   fbq('track', 'Purchase', {
                     value: produto.preco,
@@ -655,7 +653,6 @@ function Checkout() {
           headers,
         })
         .then((response) => {
-          console.log(response.data, "CLIENTE ✅")
           setShowLoading(true)
 
           const postOrder = {
@@ -675,7 +672,6 @@ function Checkout() {
               headers,
             })
             .then((response) => {
-              console.log(response.data, "ORDEM ✅")
 
               const orderId = response.data.data.id
 
@@ -700,8 +696,13 @@ function Checkout() {
                   { headers }
                 )
                 .then((response) => {
-                  console.log(response.data, "DEU CERTO O PAGAMENTO ✅")
                   setDataFromApi(response.data)
+                  
+                  fbq('track', 'Purchase', {
+                    value: produto.preco,
+                    currency: 'BRL' 
+                  });
+
                   navigate("/payment-boleto", {
                     state: {
                       dataFromApi: response.data,
@@ -1398,7 +1399,7 @@ function Checkout() {
 
 
                 {/* CAMPO BOLETO */}
-                {/* <InputWrapper
+                <InputWrapper
                   className="formPayBoleto"
                   style={{ borderTop: "1px solid #d9d9d9" }}
                 >
@@ -1489,7 +1490,7 @@ function Checkout() {
                       </DivProtecao>
                     </ButtonCnt>
                   </AccordionItem>
-                </InputWrapper> */}
+                </InputWrapper>
 
               </Accordion>
             </AccordionWrapper>

@@ -513,7 +513,7 @@ export const productsData = [
     nome: "1 Frasco - Hipersense",
     nomeapi: "1 Frasco - Hipersense",
     imagem:
-      "https://images.yampi.me/assets/stores/digital-products4/uploads/images/1-frasco-hipersense-64625ffc2bed4-thumb.png",
+      "https://cdn.shopify.com/s/files/1/0724/2045/8772/files/1-frasco-pulse-pro-64686e234af5e-thumb.png?v=1684596239",
     preco: 197.00,
     descontoPix: function () {
       return (this.preco * 0.02).toFixed(2)
@@ -563,7 +563,7 @@ export const productsData = [
     nome: "3 Frascos - Hipersense",
     nomeapi: "3 Frascos - Hipersense",
     imagem:
-      "https://images.yampi.me/assets/stores/digital-products4/uploads/images/3-frascos-hipersense-6462600c9bb33-thumb.png",
+      "https://cdn.shopify.com/s/files/1/0724/2045/8772/files/3-frascos-pulse-pro-64686e359c421-thumb.png?v=1684596239",
     preco: 297.00,
     descontoPix: function () {
       return (this.preco * 0.02).toFixed(2)
@@ -613,7 +613,7 @@ export const productsData = [
     nome: "5 Frascos - Hipersense",
     nomeapi: "5 Frascos - Hipersense",
     imagem:
-      "https://images.yampi.me/assets/stores/digital-products4/uploads/images/5-frascos-hipersense-6462601a3cd06-thumb.png",
+      "https://cdn.shopify.com/s/files/1/0724/2045/8772/files/5-frascos-pulse-pro-64686e47beb97-thumb.png?v=1684596238",
     preco: 397.00,
     descontoPix: function () {
       return (this.preco * 0.02).toFixed(2)
@@ -663,7 +663,7 @@ export const productsData = [
     nome: "12 Frascos - Hipersense",
     nomeapi: "12 Frascos - Hipersense",
     imagem:
-      "https://images.yampi.me/assets/stores/digital-products4/uploads/images/12-frascos-hipersense-6462602800302-thumb.png",
+      "https://cdn.shopify.com/s/files/1/0724/2045/8772/files/12-frascos-pulse-pro-64686e574d5ad-thumb.png?v=1684596239",
     preco: 697.00,
     descontoPix: function () {
       return (this.preco * 0.02).toFixed(2)
