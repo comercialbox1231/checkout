@@ -87,7 +87,7 @@ import { useParams } from "react-router-dom"
 
 function Checkout() {
   // Token de produção
-  const accessToken = "E07FD317-E56D5B94-09AC57E8-0D5C999B"
+  const accessToken = "NÃO FOI"
 
   const [nomeCompleto, setNomeCompleto] = useState("")
   const [email, setEmail] = useState("")
